@@ -1,0 +1,33 @@
+@layer components {
+  .landing-card {
+    @apply rounded-2xl border border-slate-200/80 bg-white shadow-card transition duration-300;
+  }
+
+  .landing-card-hover {
+    @apply rounded-2xl border border-slate-200/80 bg-white shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-elevated;
+  }
+
+  .landing-card-hover:hover {
+    border-color: rgb(0 97 255 / 0.2);
+  }
+
+  .landing-btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold text-white shadow-lg transition;
+    background-color: #0061ff;
+    box-shadow:
+      0 10px 15px -3px rgb(0 97 255 / 0.25),
+      0 4px 6px -4px rgb(0 97 255 / 0.25);
+  }
+
+  .landing-btn-primary:hover {
+    background-color: #0050d4;
+  }
+
+  .landing-btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20;
+  }
+
+  .landing-section {
+    @apply mx-auto max-w-7xl px-4 py-16 md:px-6 lg:py-20;
+  }
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import './styles/landing.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth antialiased;
+  }
+  body {
+    @apply bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100;
+  }
+}
+
+@layer components {
+  .page-container {
+    @apply mx-auto w-full max-w-7xl space-y-6 p-4 md:p-6;
+  }
+  .glass-panel {
+    @apply rounded-2xl border border-slate-200/80 bg-white/90 shadow-card backdrop-blur dark:border-slate-800 dark:bg-slate-900/90;
+  }
+}

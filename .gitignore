@@ -1,0 +1,15 @@
+
+.metadata/
+node_modules/
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+.DS_Store
+Thumbs.db
+.env
+dist/
+build/
+
